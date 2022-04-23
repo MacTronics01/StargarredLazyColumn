@@ -1,0 +1,138 @@
+package com.example.staggardlazycolumnjetpack
+
+import com.example.staggardlazycolumnjetpack.CardData
+import com.example.staggardlazycolumnjetpack.R
+
+object FoodDataList {
+    val food =
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 1,
+            process = "put the egugi in fire then cook it normally lolz")
+
+   val  foodList= listOf(
+       food,
+         CardData(
+             foodImage = R.drawable.egusi,
+             foodName = "Egusi",
+             make = "Details",
+             height = 200,
+         description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+         foodIngredients = "Maggi, salt, pepper, onion",
+         id = 2,
+         process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 3,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 4,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 5,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 6,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 7,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 8,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 9,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 10,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 11,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 12,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 13,
+            process = "put the egugi in fire then cook it normally lolz"),
+        CardData(
+            foodImage = R.drawable.egusi,
+            foodName = "Egusi",
+            make = "Details",
+            height = 200,
+            description = "Egusi is enjoyed hot with either garri, fufu, poundo, or semo, with alot of death animals.",
+            foodIngredients = "Maggi, salt, pepper, onion",
+            id = 14,
+            process = "put the egugi in fire then cook it normally lolz"),
+    )
+}

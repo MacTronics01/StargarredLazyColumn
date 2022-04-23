@@ -1,0 +1,97 @@
+package com.example.staggardlazycolumnjetpack.ui.theme
+
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.Divider
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
+import com.example.staggardlazycolumnjetpack.CardData
+import com.example.staggardlazycolumnjetpack.R
+
+@Composable
+fun FoodProfileScreen(food:CardData){
+    val scrollState = rememberScrollState()
+
+    Column( modifier = Modifier.fillMaxSize()) {
+        BoxWithConstraints {
+            Surface() {
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .verticalScroll(scrollState)
+                ) {
+                    ProfileHeader(food =food, containerHeight = this@BoxWithConstraints.maxHeight)
+                    ProfileContent(food =food, containerHeight = this@BoxWithConstraints.maxHeight)
+
+                }
+            }
+
+        }
+
+    }
+}
+@Composable
+private fun ProfileHeader(
+    food: CardData,
+    containerHeight: Dp
+){
+    Image(
+        modifier = Modifier
+            .heightIn(max = containerHeight / 2)
+            .fillMaxWidth(),
+        painter = painterResource(id = food.foodImage),
+        contentScale = ContentScale.Crop,
+        contentDescription = null
+    )
+}
+@Composable
+private fun ProfileContent(food: CardData, containerHeight: Dp){
+    Column {
+        Title(food =food)
+        ProfileProperty(label = stringResource(id = com.example.staggardlazycolumnjetpack.R.string.personality) , value =food.description)
+        ProfileProperty(label = stringResource(id = com.example.staggardlazycolumnjetpack.R.string.ingredient) , value =food.foodIngredients)
+        ProfileProperty(label = stringResource(id =com.example.staggardlazycolumnjetpack.R.string.process) , value =food.process)
+        Spacer(modifier = Modifier.height((containerHeight -0.dp).coerceAtLeast(0.dp)))
+    }
+}
+
+@Composable
+private fun Title(food: CardData){
+    Column( modifier =Modifier.padding(16.dp)) {
+        Text(
+            text=food.foodName,
+            style = MaterialTheme.typography.h5,
+            fontWeight = FontWeight.Bold
+        )
+
+    }
+}
+@Composable
+private fun ProfileProperty(label: String, value: String){
+    Column( modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 16.dp)) {
+        Divider(modifier = Modifier.padding(bottom = 4.dp))
+        Text(
+            text = label,
+            modifier = Modifier.height(24.dp),
+            style = MaterialTheme.typography.caption
+        )
+        Text(
+            text =value,
+            modifier = Modifier.height(24.dp),
+            style = MaterialTheme.typography.body1,
+            overflow = TextOverflow.Visible
+        )
+    }
+}

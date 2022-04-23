@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">StaggardLazyColumn Jetpack</string>
+    <string name="personality"> Personality</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="process">Process</string>
+</resources>
